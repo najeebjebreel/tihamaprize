@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جائزة تهامة للتميز البحثي 2025</title>
+
+    <!-- خط تاجوال -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 15px;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            background: white;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .section {
+            padding: 3rem 2rem;
+            border-bottom: 1px solid #ecf0f1;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .objectives {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+
+        .objectives ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .objectives li {
+            background: white;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-right: 4px solid #3498db;
+        }
+
+        .categories {
+            background: linear-gradient(135deg, #fff5f5, #fed7d7);
+        }
+
+        .category {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border-right: 5px solid #e74c3c;
+        }
+
+        .category h3 {
+            color: #e74c3c;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-icon {
+            width: 30px;
+            height: 30px;
+            background: #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .prize {
+            background: linear-gradient(135deg, #f39c12, #e67e22);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+
+        .dates {
+            background: linear-gradient(135deg, #f0fff4, #c6f6d5);
+        }
+
+        .date-item {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-right: 4px solid #27ae60;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .date-item strong {
+            color: #27ae60;
+        }
+
+        .contact {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-item {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+
+        .contact-item a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .section {
+                padding: 2rem 1rem;
+            }
+            
+            .date-item {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .contact div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+                gap: 1rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-section">
+                <div class="logo">
+                    <img src="tihama_forum.jpg" alt="شعار منتدى أكاديميي تهامة" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'background: linear-gradient(135deg, #2980b9, #3498db); border-radius: 50%; width: 100px; height: 100px; display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem; font-weight: bold;\'>ت</div>';">
+                </div>
+                <h1>جائزة تهامة للتميز البحثي</h1>
+                <p class="subtitle">النسخة الأولى 2025 - منتدى أكاديميي تهامة</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="section objectives">
+                <h2><span class="icon">🎯</span>أهداف الجائزة</h2>
+                <ul>
+                    <li>تشجيع الأكاديميين والباحثين على تقديم بحوث علمية تخدم تهامة</li>
+                    <li>تعزيز الإنتاج العلمي حول تهامة بمختلف جوانبها</li>
+                    <li>إبراز الدور الحضاري والسياسي والثقافي والاقتصادي للمنطقة</li>
+                    <li>إبراز قضايا وهموم أبناء تهامة من منظور أكاديمي</li>
+                    <li>رفد الساحة المعرفية برؤى جديدة وحلول عملية لقضايا تهامة</li>
+                </ul>
+            </section>
+
+            <section class="section categories">
+                <h2><span class="icon">📚</span>أقسام الجائزة</h2>
+                
+                <div class="category">
+                    <h3><span class="category-icon">1</span>القسم الأول: أفضل بحث يُعد خصيصاً للجائزة</h3>
+                    <div class="prize">المركز الأول: 5,000 ريال سعودي</div>
+                    <div class="prize">المركز الثاني: 3,000 ريال سعودي</div>
+                    <div class="prize">المركز الثالث: 2,000 ريال سعودي</div>
+                    
+                    <h4>المواضيع المقترحة للعام 2025:</h4>
+                    <ul>
+                        <li>دور تهامة العلمي والثقافي عبر العصور: زبيد نموذجاً</li>
+                        <li>الوضع القانوني لتهامة منذ اتفاقية دعان</li>
+                        <li>الوضع الحالي لتهامة: التحديات والحلول الممكنة؟</li>
+                        <li>المشاركة السياسية لأبناء تهامة في الحكم المحلي والمركزي (1962-2014)</li>
+                        <li>الحالة الدينية في تهامة، ودورها البارز في خدمة التراث الإسلامي</li>
+                    </ul>
+                    
+                    <h4>شروط المشاركة:</h4>
+                    <ul>
+                        <li>أصالة البحث وعدم نشره من قبل</li>
+                        <li>عدد كلمات بين 8000 و 10000 كلمة</li>
+                        <li>الالتزام بالمنهجية العلمية (ملخص، أهداف، إطار نظري، منهج، نتائج، تحليل)</li>
+                        <li>اللغة العربية، وخلو البحث من الأخطاء الإملائية والنحوية</li>
+                        <li>يمكن أن يُقدم من باحث فرد أو مجموعة</li>
+                        <li>للمنتدى حق الاحتفاظ بحقوق النشر للبحوث الفائزة</li>
+                    </ul>
+                    
+                    <h4>آلية التقديم:</h4>
+                    <div style="background: #e8f4fd; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border-right: 4px solid #3498db;">
+                        <p><strong>الخطوة الأولى:</strong> إرسال ملخص علمي (300 كلمة) والسيرة الذاتية للباحث إلى: <a href="mailto:tihamaprize@gmail.com" style="color: #2980b9; font-weight: bold;">tihamaprize@gmail.com</a></p>
+                        <p><strong>الخطوة الثانية:</strong> بعد قبول الملخص مبدئياً، سيتم إبلاغ الباحث بذلك ليتم إرسال البحث كاملاً إلى الإيميل أعلاه</p>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3><span class="category-icon">2</span>القسم الثاني: أفضل بحث منشور (2021-2025)</h3>
+                    <p>يُقبل بحث من كل حقل علمي:</p>
+                    <ul>
+                        <li>العلوم التطبيقية والتجريبية</li>
+                        <li>العلوم الإنسانية</li>
+                        <li>العلوم الإسلامية</li>
+                    </ul>
+                    
+                    <h4>شروط المشاركة:</h4>
+                    <ul>
+                        <li>أن يكون البحث قد نُشر في مجلة علمية محكمة أو مؤتمر علمي دولي أو ضمن مؤلف علمي موثق بعد 2021</li>
+                        <li>ألا يكون البحث قد حصل على جائزة سابقة</li>
+                        <li>ألا يكون منشوراً باسم جهة حكومية أو ضمن عمل رسمي ملزم (إلا إذا كان للباحث حرية النشر والتصرف فيه)</li>
+                    </ul>
+                    
+                    <h4>آلية التقديم:</h4>
+                    <div style="background: #fdf2e9; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border-right: 4px solid #e67e22;">
+                        <p><strong>الخطوة الأولى:</strong> إرسال ملخص علمي (300 كلمة)، السيرة الذاتية، وبيانات النشر (اسم المجلة/المؤتمر، العدد، التاريخ، رابط إن وجد) إلى: <a href="mailto:tihamaprize@gmail.com" style="color: #d35400; font-weight: bold;">tihamaprize@gmail.com</a></p>
+                        <p><strong>الخطوة الثانية:</strong> بعد قبول الملخص مبدئياً، سيتم إبلاغ الباحث بذلك ليتم إرسال البحث كاملاً إلى الإيميل أعلاه</p>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <h3><span class="category-icon">3</span>القسم الثالث: الشخصية العلمية التهامية</h3>
+                    <p>تُمنح لأكاديمي من أبناء تهامة يتميز برصيد علمي وازن وإسهام فعال في خدمة المعرفة والمجتمع، سواء عبر الترشيح المباشر من أمانة الجائزة واللجنة العلمية ورئاسة المنتدى، أو من خلال التقدم بطلب من الأكاديمي نفسه، أو من بعض تلامذته أو زملائه.</p>
+                    
+                    <h4>آلية التقديم:</h4>
+                    <div style="background: #f0f9ff; padding: 1.5rem; border-radius: 10px; margin: 1rem 0; border-right: 4px solid #3b82f6;">
+                        <p>إرسال السيرة الذاتية إلى: <a href="mailto:tihamaprize@gmail.com" style="color: #1d4ed8; font-weight: bold;">tihamaprize@gmail.com</a></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section dates">
+                <h2><span class="icon">📅</span>تواريخ مهمة</h2>
+                <div class="date-item">
+                    <span>آخر موعد لإرسال الملخصات</span>
+                    <strong><s style="color: #e74c3c;">31 أغسطس 2025</s> ← 30 سبتمبر 2025</strong>
+                </div>
+                <div class="date-item">
+                    <span>آخر موعد لتسليم البحوث الكاملة</span>
+                    <strong>30 نوفمبر 2025</strong>
+                </div>
+                <div class="date-item">
+                    <span>حفل التكريم وإعلان الفائزين</span>
+                    <strong>الأسبوع الأخير من ديسمبر 2025</strong>
+                </div>
+            </section>
+
+            <section class="section contact">
+                <h2><span class="icon">📧</span>للتواصل والتقديم</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>البريد الإلكتروني:</strong><br>
+                        <a href="mailto:tihamaprize@gmail.com">tihamaprize@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>واتساب:</strong><br>
+                        <a href="https://wa.me/967734169700">+967734169700</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                    <h3 style="margin-bottom: 2rem; text-align: center;">اللجنة القائمة على الجائزة</h3>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                        <!-- بطاقة المشرف العام -->
+                        <div style="background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid rgba(255,255,255,0.3); overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+                                <img src="khalid.jpg" alt="د. خالد بريه" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #f39c12, #e67e22); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">خ.ب</div>
+                            </div>
+                            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.3rem;">د. خالد بريه</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1rem;">المشرف العام</p>
+                            <div style="width: 50px; height: 3px; background: linear-gradient(to right, #f39c12, #e67e22); margin: 0 auto; border-radius: 2px;"></div>
+                        </div>
+
+                        <!-- بطاقة رئيس لجنة التحكيم -->
+                        <div style="background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid rgba(255,255,255,0.3); overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+                                <img src="abdu.jpeg" alt="أ. د. عبد الودود مقشر" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #27ae60, #2ecc71); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">ع.م</div>
+                            </div>
+                            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.3rem;">أ. د. عبد الودود مقشر</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1rem;">رئيس لجنة التحكيم</p>
+                            <div style="width: 50px; height: 3px; background: linear-gradient(to right, #27ae60, #2ecc71); margin: 0 auto; border-radius: 2px;"></div>
+                        </div>
+
+                        <!-- بطاقة مدير لجنة الإعداد والتنظيم -->
+                        <div style="background: rgba(255,255,255,0.15); padding: 2rem; border-radius: 15px; text-align: center; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; margin: 0 auto 1rem; border: 3px solid rgba(255,255,255,0.3); overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.2);">
+                                <img src="najeeb.jpg" alt="د. نجيب جبريل" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #8e44ad, #9b59b6); display: none; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold;">ن.ج</div>
+                            </div>
+                            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.3rem;">د. نجيب جبريل</h4>
+                            <p style="color: rgba(255,255,255,0.8); font-size: 1rem; margin-bottom: 1rem;">مدير لجنة الإعداد والتنظيم</p>
+                            <div style="width: 50px; height: 3px; background: linear-gradient(to right, #8e44ad, #9b59b6); margin: 0 auto; border-radius: 2px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
